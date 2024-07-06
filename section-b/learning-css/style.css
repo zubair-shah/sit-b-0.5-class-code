@@ -1,0 +1,59 @@
+/* * {
+    color: red;
+} */
+
+/* h2 {
+    color: yellow !important;
+} */
+
+/* h2 {
+    color: blueviolet;
+} */
+
+@font-face {
+    font-family: zubairfont;
+    src: url('./fonts/Starborn.ttf');
+}
+
+
+.brown-color {
+    color: brown;
+    font-family: 'zubairfont';
+}
+
+.pink-color {
+    color: pink;
+}
+
+#third-heading {
+    color: blue;
+}
+
+/* h2 {
+    color: yellow;
+}
+
+h2 {
+    color: pink;
+} */
+
+li>a {
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+}
+
+p a {
+    text-decoration: double;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.second-a {
+    color: red;
+    background-color: #16bacc;
+}
+
+#first-para {
+    font-family: "Roboto";
+}
