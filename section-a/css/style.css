@@ -60,3 +60,33 @@ h3 {
 #first-para {
     font-family: "Roboto";
 }
+.searchbar {
+    text-align: center;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
