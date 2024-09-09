@@ -39,3 +39,5 @@ document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 
 // let myNewData = `my name is zubair and my age is ${myAge}
 // currently i am studying in ${currentSemester}th semester`
 // console.log(myNewData)
+
+console.log("Hi testing github pull")
