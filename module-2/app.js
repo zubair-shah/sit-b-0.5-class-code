@@ -24,7 +24,7 @@ document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 
 
 // let parentsTeachersNote = 16;
 
-// let myName = "zubair1";
+let myName = "zubair1";
 // let myName2 = 'zubair2';
 // let myName3 = `zubair3`;
 // console.log(myName)
@@ -40,4 +40,80 @@ document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 
 // currently i am studying in ${currentSemester}th semester`
 // console.log(myNewData)
 
-console.log("Hi testing github pull")
+// console.log("Hi testing github pull")
+
+//======================Number====================
+
+
+// let num = 10;  //integer
+// let decNr = 1.5; //floating point number
+// let expNr = 1.4e15; //exponential number
+
+// console.log(num)
+// console.log(expNr)
+
+//====================bigint================
+
+// let bigNr = 90071992547409920n;
+
+// console.log(bigNr + num)   //error
+
+
+// ============= Undefined =================
+
+// let anas;
+
+// console.log(anas)
+
+// ==============null================
+
+// let firstName = null;
+// console.log(firstName)
+// firstName = prompt("Enter your first name")
+// console.log(firstName)
+
+
+// ===============Boolean ================
+
+// let isFeesSubmit = false;
+// let isFeesSubmit2 = true;
+
+
+
+// ================Symbol==========================
+// let str1 = "JavaScript is fun!";
+// let str2 = "JavaScript is fun!";
+// let symbol1 = Symbol("JavaScript is fun!");
+
+
+// =================typeof for checking data types================
+// console.log(typeof isFeesSubmit)
+// console.log(typeof isFeesSubmit2)
+// console.log(typeof firstName)
+// console.log(typeof anas)
+// console.log(typeof bigNr)
+// console.log(typeof num)
+// console.log(typeof myName)
+// console.log(typeof symbol1)
+
+
+
+// =================comparison ================
+
+let str1 = "12";
+let num1 = 12;
+
+// console.log(str1 == num1)
+// console.log(str1 === num1)
+
+let x = 15;
+let y = 15;
+// console.log(x === y)
+// console.log(x !== y)
+
+// =============operators==============
+console.log(x + y)
+console.log(x - y)
+console.log(x * y)
+console.log(x / y)
+console.log(x ** 0.5)
