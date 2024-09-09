@@ -1,0 +1,65 @@
+:root {
+    --color1: #001219;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #ee9800;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+
+@media (min-width:550px) {
+    header {
+        padding: 3rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    nav ul li {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        background-color: transparent;
+        color: var(--color1);
+        padding: 0;
+    }
+
+    nav ul li a:hover {
+        color: var(--color1);
+        background-color: transparent;
+    }
+
+}
+
+@media (min-width:800px) {
+    nav ul li:first-child {
+        flex-basis: auto;
+        margin: 0 auto;
+        order: 3;
+    }
+
+    nav ul li:nth-child(2) {
+        order: 1;
+    }
+
+    nav ul li:nth-child(3) {
+        order: 2;
+    }
+
+    nav ul li:nth-child(4) {
+        order: 4;
+    }
+
+    nav ul li:nth-child(5) {
+        order: 5;
+    }
+
+}

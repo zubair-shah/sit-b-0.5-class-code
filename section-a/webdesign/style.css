@@ -1,0 +1,160 @@
+:root {
+    --color1: #001219;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #242423;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DBE5DE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.sec-padding {
+    padding: 40px 0px;
+}
+
+.header-bg {
+    background-color: var(--color5);
+}
+
+header {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+}
+
+nav ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+
+}
+
+nav ul li:first-child a {
+    background-color: transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: var(--color10);
+    color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+
+
+}
+
+
+/* ----------------------------banner-styling------------ */
+
+#hero-banner {
+    background-color: var(--color7);
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#hero-banner img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#popular-print {
+    background-color: var(--color2);
+}
+
+#popular-print h2 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+figure {
+    margin: 0 0 1rem;
+    padding: 0;
+    border: 10px solid var(--color7);
+    border-radius: 5px;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -150px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+
+}
+
+figcaption a {
+    padding: 0.8rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.color-1 {
+    border-color: var(--color9);
+}
+
+.color-2 {
+    border-color: var(--color7);
+}
+
+.color-3 {
+    border-color: var(--color4);
+}

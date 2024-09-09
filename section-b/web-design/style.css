@@ -1,0 +1,162 @@
+:root {
+    --color1: #001219;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #ee9800;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DBE5DE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sec-padding {
+    padding: 1rem 0.5rem 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 0 !important;
+}
+
+.header {
+    background-color: var(--color5);
+}
+
+header {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+}
+
+nav ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+
+}
+
+nav ul li:first-child a {
+    background-color: transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color10);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+/* ----------------------------banner-style-------------- */
+
+#hero-banner {
+    background-color: var(--color7);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+#hero-banner img {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/* --------------------popular-prints--------------------- */
+.popular-print {
+    background-color: var(--color2);
+    color: white;
+}
+
+.popular-print h2 {
+    font-size: 2rem;
+}
+
+figure {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    height: 100%;
+    max-height: 400px;
+    position: relative;
+    border: 10px solid var(--color8);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -150px;
+}
+
+figcaption {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
+
+figcaption a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--color1);
+    display: block;
+    padding: 0.8rem;
+
+}
+
+.color-1 {
+    border-color: var(--color8);
+}
+
+.color-2 {
+    border-color: var(--color6);
+}
+
+.color-3 {
+    border-color: var(--color4);
+}

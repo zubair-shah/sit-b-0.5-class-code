@@ -1,0 +1,93 @@
+:root {
+    --color1: #000000;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #242423;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+
+@media (min-width: 320px) {
+    header ul li img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 550px) {
+    header {
+        padding: 3rem;
+    }
+
+    nav ul li a {
+        background-color: transparent;
+        color: var(--color1);
+        padding: 0;
+        font-size: 1.2rem;
+
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    nav ul li {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+
+    #popular-print .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    #popular-print .row .col-1,
+    #popular-print .row .col-2 {
+        flex-basis: 48%;
+    }
+
+    #popular-print .row .col-3 {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width:800px) {
+    nav ul li:first-child {
+        flex-basis: auto;
+        order: 3;
+        margin: 0 auto;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .order-4 {
+        order: 4;
+    }
+
+    .order-5 {
+        order: 5;
+    }
+
+    #popular-print .row {
+        flex-wrap: nowrap;
+        justify-content: unset;
+    }
+
+    #popular-print .row .col-1,
+    #popular-print .row .col-2,
+    #popular-print .row .col-3 {
+        flex-basis: auto;
+    }
+}

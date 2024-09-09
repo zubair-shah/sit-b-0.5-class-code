@@ -7,6 +7,7 @@ body {
             rgba(61, 147, 151, 1) 100%);
 }
 
+
 figure {
     padding: 0;
     margin: 0;
@@ -15,7 +16,7 @@ figure {
 figcaption {
     background-color: #001219;
     color: white;
-    padding: 1rem;
+    padding: 16px;
 }
 
 figure>div {
@@ -38,10 +39,24 @@ figure>div {
 .four {
     background-color: #005f73;
 }
-/* 
+
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-*/
+.shahnoor {
+    order: 4;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-1 {
+    order: 1;
+}
