@@ -106,14 +106,54 @@ let num1 = 12;
 // console.log(str1 == num1)
 // console.log(str1 === num1)
 
-let x = 15;
-let y = 15;
+// let x = 14;
+// let y = 17;
 // console.log(x === y)
 // console.log(x !== y)
 
+// console.log(x > y)
+// console.log(x < y)
+// console.log(x <= y)
+// console.log(x >= y)
+
+// =================logical operators ================
+// let x = 1;
+// let y = 2;
+// let z = 3;
+// console.log(x < y && y < z);
+// console.log(x > y && y < z);
+// console.log(x > y && x === y)
+// console.log(x > y || x === y)
+// console.log(!(x < y));
+
+
+
 // =============operators==============
-console.log(x + y)
-console.log(x - y)
-console.log(x * y)
-console.log(x / y)
-console.log(x ** 0.5)
+// let x = 2;
+// let y = 2;
+// console.log(x + y)
+// console.log(x - y)
+// console.log(x * y)
+// console.log(x / y)
+// console.log(x ** 2)
+
+// =============Datatype conversion===============
+
+let x = "2";
+let y = 2;
+console.log("String to Number", Number(x))
+console.log("Number to String ", String(y))
+console.log("String to Boolean", Boolean("i am zubair"))
+console.log("String to Boolean", Boolean(""))
+console.log("Number to Boolean", Boolean(10))
+console.log("null to boolean", Boolean(null))
+console.log("undefined to boolean", Boolean(undefined))
+
+
+
+
+// ============hypotenus calculator ==================
+// let a = +prompt("Enter you value of a")
+// let b = +prompt("Enter you value of b")
+// let result = Math.sqrt(a ** 2 + b ** 2);
+// console.log(result)
