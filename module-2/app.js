@@ -139,15 +139,15 @@ let num1 = 12;
 
 // =============Datatype conversion===============
 
-let x = "2";
-let y = 2;
-console.log("String to Number", Number(x))
-console.log("Number to String ", String(y))
-console.log("String to Boolean", Boolean("i am zubair"))
-console.log("String to Boolean", Boolean(""))
-console.log("Number to Boolean", Boolean(10))
-console.log("null to boolean", Boolean(null))
-console.log("undefined to boolean", Boolean(undefined))
+// let x = "2";
+// let y = 2;
+// console.log("String to Number", Number(x))
+// console.log("Number to String ", String(y))
+// console.log("String to Boolean", Boolean("i am zubair"))
+// console.log("String to Boolean", Boolean(""))
+// console.log("Number to Boolean", Boolean(10))
+// console.log("null to boolean", Boolean(null))
+// console.log("undefined to boolean", Boolean(undefined))
 
 
 
@@ -157,3 +157,28 @@ console.log("undefined to boolean", Boolean(undefined))
 // let b = +prompt("Enter you value of b")
 // let result = Math.sqrt(a ** 2 + b ** 2);
 // console.log(result)
+
+// let isRaining = true;
+// if (isRaining) {
+//     console.log('yes barish horahi he')
+// } else {
+//     console.log('no barish nhi horahi he')
+// }
+
+// let age = +prompt("Enter your age");
+
+function makeOffer() {
+    let age = document.getElementById('input').value;
+    console.log(age)
+    if (age < 3) {
+        console.log("1 se 2 saal tk ticket free he")
+        document.getElementById('para').innerHTML = "1 se 2 saal tk ticket free he";
+    }
+    else if (age >= 3 && age < 12) {
+        console.log("30% off for you")
+    } else {
+        console.log("70% off for you")
+    }
+
+}
+
