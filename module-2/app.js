@@ -167,18 +167,59 @@ let num1 = 12;
 
 // let age = +prompt("Enter your age");
 
-function makeOffer() {
-    let age = document.getElementById('input').value;
-    console.log(age)
-    if (age < 3) {
-        console.log("1 se 2 saal tk ticket free he")
-        document.getElementById('para').innerHTML = "1 se 2 saal tk ticket free he";
-    }
-    else if (age >= 3 && age < 12) {
-        console.log("30% off for you")
-    } else {
-        console.log("70% off for you")
-    }
+// function makeOffer() {
+//     let age = document.getElementById('input').value;
+//     console.log(age)
+//     if (age < 3) {
+//         console.log("1 se 2 saal tk ticket free he")
+//         document.getElementById('para').innerHTML = "1 se 2 saal tk ticket free he";
+//     }
+//     else if (age >= 3 && age < 12) {
+//         console.log("30% off for you")
+//     } else {
+//         console.log("70% off for you")
+//     }
 
+// }
+
+
+// =======================ternary-operator=============
+
+// let age = +prompt("Enter your age");
+// let access = null;
+// if (age < 18) {
+//     access = "Not Allow"
+// } else {
+//     access = "Allow"
+// }
+// let access2 = age > 18 && age < 40 ? "Allow" : "Not Allow";
+// // let access2 = age > 18 ? age < 40 ? "Allow" : "Not Allow" : "Not Allow";
+// console.log(access)
+// console.log(access2)
+
+// let activity = "lunch";
+
+// let activity = "Breakfast";
+
+// if (activity === "Get up") {
+//     console.log("It is 6:30AM");
+// } else if (activity === "Breakfast") {
+//     console.log("It is 7:00AM");
+// } else if (activity === "Drive to work") {
+//     console.log("It is 8:00AM");
+// } else if (activity === "Lunch") {
+//     console.log("It is 12.00PM");
+// } else if (activity === "Drive home") {
+//     console.log("It is 5:00PM");
+// } else if (activity === "Dinner") {
+//     console.log("It is 6:30PM");
+// } else {
+//     console.log("It is 9:00PM");
+// }
+let activity = "Drive to work";
+switch (activity) {
+    case "Breakfast":
+        console.log("It is 7:00AM");
+    case "Drive to work":
+        console.log("It is 8:00AM");
 }
-
