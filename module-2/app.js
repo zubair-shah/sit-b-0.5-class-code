@@ -216,10 +216,70 @@ let num1 = 12;
 // } else {
 //     console.log("It is 9:00PM");
 // }
-let activity = "Drive to work";
-switch (activity) {
-    case "Breakfast":
-        console.log("It is 7:00AM");
-    case "Drive to work":
-        console.log("It is 8:00AM");
-}
+// let activity = "Drive to work";
+// switch (activity) {
+//     case "Breakfast":
+//         console.log("It is 7:00AM");
+//     case "Drive to work":
+//         console.log("It is 8:00AM");
+// }
+
+
+// let age = 'abc';
+// let age = 17;
+
+// switch (true) {
+//     case age < 18:
+//         console.log("Your are not allowed to enter in game center");
+//         break;
+//     case age > 18:
+//         console.log("Your are  allowed to enter in game center");
+//         break;
+//     default:
+//         console.log("Invalid age");
+// }
+
+
+// ================Arrays ========================
+// let std1Name = "Owais"
+// let std1age = 16;
+// let std1isFeeSubmit = true;
+// let std1RollNumber = 1;
+
+// let colorArray = new Array("purple", "green", "yellow")
+
+// let colorArray2 = ["black", "green", "yellow"]
+// let std1 = ["Shahnoor", 21, true]
+// console.log(std1)
+
+// console.log(colorArray)
+// console.log(colorArray2)
+
+
+// let array1 = new Array(10);
+// let array2 = [10];
+// console.log(array1)
+// console.log(array2)
+// let cars = ["Toyota", "Renault", "Volkswagen"];
+// console.log(cars)
+// cars[0] = "cultus";
+// cars[1] = "Ferrari";
+// cars[4] = "Fiat";
+// console.log(cars[0])
+// console.log(cars[1])
+// console.log(cars[2])
+// console.log(cars[3])
+// console.log(cars[-1])
+// console.log(cars)
+// console.log(cars.length)
+
+// let students = ["owais", "shahnoor", "Anas"];
+// console.log(students)
+// students.push("Abdul Rafay");
+// students.unshift("Abdul Rafay", "Kaif");
+// students.unshift("Abdul Rafay");
+// students.unshift("Kaif");
+// console.log(students)
+// students.shift();
+// students.pop();
+// console.log(students)
