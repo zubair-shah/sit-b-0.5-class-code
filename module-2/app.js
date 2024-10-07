@@ -320,3 +320,94 @@ let colorArray2 = ["black", "green", "yellow"]
 // console.log(MixedArray)
 // console.log(mixedArray2)
 // console.log(mixedArray2[2][3][3][0])
+
+
+// ========objects======================
+// let stduent1 = ['zubair', 'shamim', 23, 1234, 1233, 1234, 7, 6, 'math', 'english', 'urdu', 'science', 'islamiyat']
+
+// let studentObject = {
+//     name: "zubair",
+//     fatherName: "shamim",
+//     age: 23,
+//     contactNo: 340829383,
+//     rollNo: 1234,
+//     class: 7,
+//     subjects: ['math', 'english', 'urdu', 'science', 'islamiyat']
+// }
+// console.log(studentObject.name)
+// console.log(studentObject.subjects[2])
+// console.log(studentObject.age)
+// studentObject.age = 24;
+// studentObject.subjects[2] = "Social Studies";
+// console.log(studentObject.subjects[2])
+// console.log(studentObject.subjects)
+// console.log(studentObject.subjects[0])
+// console.log(studentObject['name'])
+
+// let company = {
+//     companyName: "Healthy Candy",
+//     activity: "food manufacturing",
+//     address: {
+//         street: "2nd street",
+//         number: "123",
+//         zipcode: "33116",
+//         city: "Miami",
+//         state: "Florida",
+//     },
+//     yearOfEstablishment: 2021,
+// };
+// company.address.city = "karachi";
+// console.log(company.address.city)
+// console.log(company.yearOfEstablishment)
+
+
+// let company2 = {
+//     companyName: "Healthy Candy",
+//     activities: [
+//         "food manufacturing",
+//         "improving kids' health",
+//         "manufacturing toys",
+//     ],
+//     address: {
+//         street: "2nd street",
+//         number: "123",
+//         zipcode: "33116",
+//         city: "Miami",
+//         state: "Florida",
+//     },
+//     yearOfEstablishment: 2021,
+// };
+// company2.activities[2] = "abdul rafay"
+// console.log(company2.activities[2])
+
+
+let company = {
+    companyName: "Healthy Candy",
+    activity: "food manufacturing",
+    address: [{
+        street: "2nd street",
+        number: "123",
+        zipcode: "33116",
+        city: "karachi",
+        state: "Pakistan",
+
+    }, {
+        street: "2nd street",
+        number: "123",
+        zipcode: "33116",
+        city: "New York",
+        state: "USA",
+
+    }],
+    yearOfEstablishment: 2021,
+};
+// company.address[0].city = "Toronto"
+// company.address[0].state = "Canada"
+// console.log(company)
+// console.log(company.address[0].state)
+
+// const myArr3 = [3, 6, 8, 9, 3, 55, 553, 434];
+// myArr3.sort();
+// console.log(myArr3)
+// myArr3.length = 0;
+// console.log(myArr3[0]);
