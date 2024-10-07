@@ -246,9 +246,9 @@ let num1 = 12;
 // let std1isFeeSubmit = true;
 // let std1RollNumber = 1;
 
-// let colorArray = new Array("purple", "green", "yellow")
+let colorArray = new Array("purple", "green", "yellow")
 
-// let colorArray2 = ["black", "green", "yellow"]
+let colorArray2 = ["black", "green", "yellow"]
 // let std1 = ["Shahnoor", 21, true]
 // console.log(std1)
 
@@ -283,3 +283,40 @@ let num1 = 12;
 // students.shift();
 // students.pop();
 // console.log(students)
+
+// let arrayFruits = ["apple", "banana", "mango"]
+// let array = ["english", "math"]
+// array.splice(1, 0, "urdu", "islamiyat")
+// console.log(array)
+
+
+// let arr5 = [1, 2, 3];
+// let arr6 = [4, 5, 6];
+// let arr7 = arr6.concat(arr5)
+// console.log(arr5)
+// console.log(arr6)
+// console.log(arr7)
+
+// let students = ["kaif", "hamza", "shahnoor", "hamza", "abdul rafay"];
+// let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+// names.sort()
+// console.log(names)
+// console.log(students.indexOf("hamza", 4))
+
+// let array1 = [1, 2, 3];
+// let array2 = [4, 5, 6];
+// let array3 = [7, 8, 9];
+
+// let MixedArray = [array1, array2, array3]
+// let mixedArray2 = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9,
+//         [11, 12, 13,
+//             [14, 15, 16]
+//         ]
+//     ]
+// ]
+// console.log(MixedArray)
+// console.log(mixedArray2)
+// console.log(mixedArray2[2][3][3][0])
