@@ -10,7 +10,7 @@
 // document.write("Hi i am from javascript")
 
 // document.getElementById("heading").innerHTML = "Zubair";
-document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 10)
+// document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 10)
 
 
 // var myName = prompt("Enter You Name:");
@@ -24,7 +24,7 @@ document.getElementById("random-number").innerHTML = Math.floor(Math.random() * 
 
 // let parentsTeachersNote = 16;
 
-let myName = "zubair1";
+// let myName = "zubair1";
 // let myName2 = 'zubair2';
 // let myName3 = `zubair3`;
 // console.log(myName)
@@ -100,8 +100,8 @@ let myName = "zubair1";
 
 // =================comparison ================
 
-let str1 = "12";
-let num1 = 12;
+// let str1 = "12";
+// let num1 = 12;
 
 // console.log(str1 == num1)
 // console.log(str1 === num1)
@@ -246,9 +246,9 @@ let num1 = 12;
 // let std1isFeeSubmit = true;
 // let std1RollNumber = 1;
 
-let colorArray = new Array("purple", "green", "yellow")
+// let colorArray = new Array("purple", "green", "yellow")
 
-let colorArray2 = ["black", "green", "yellow"]
+// let colorArray2 = ["black", "green", "yellow"]
 // let std1 = ["Shahnoor", 21, true]
 // console.log(std1)
 
@@ -381,26 +381,26 @@ let colorArray2 = ["black", "green", "yellow"]
 // console.log(company2.activities[2])
 
 
-let company = {
-    companyName: "Healthy Candy",
-    activity: "food manufacturing",
-    address: [{
-        street: "2nd street",
-        number: "123",
-        zipcode: "33116",
-        city: "karachi",
-        state: "Pakistan",
+// let company = {
+//     companyName: "Healthy Candy",
+//     activity: "food manufacturing",
+//     address: [{
+//         street: "2nd street",
+//         number: "123",
+//         zipcode: "33116",
+//         city: "karachi",
+//         state: "Pakistan",
 
-    }, {
-        street: "2nd street",
-        number: "123",
-        zipcode: "33116",
-        city: "New York",
-        state: "USA",
+//     }, {
+//         street: "2nd street",
+//         number: "123",
+//         zipcode: "33116",
+//         city: "New York",
+//         state: "USA",
 
-    }],
-    yearOfEstablishment: 2021,
-};
+//     }],
+//     yearOfEstablishment: 2021,
+// };
 // company.address[0].city = "Toronto"
 // company.address[0].state = "Canada"
 // console.log(company)
@@ -411,3 +411,29 @@ let company = {
 // console.log(myArr3)
 // myArr3.length = 0;
 // console.log(myArr3[0]);
+
+
+let student = ['kaif', 'raif', 'owais', 'anas', 'shahnoor', 'abdulrafay']
+// if (student[0] === "anas") {
+//     student.splice(0, 1)
+// }
+// if (student[1] === "anas") {
+//     student.splice(1, 1)
+// }
+// if (student[2] === "anas") {
+//     student.splice(2, 1)
+// }
+// if (student[3] === "anas") {
+//     student.splice(3, 1)
+// }
+
+
+let i = 0;
+while (i < 10) {
+    if (student[i] === "anas") {
+        student.splice(i, 1)
+    }
+    console.log('hello', i)
+    i++;
+}
+console.log(student)
