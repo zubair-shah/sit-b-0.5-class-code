@@ -413,7 +413,7 @@
 // console.log(myArr3[0]);
 
 
-let student = ['kaif', 'raif', 'owais', 'anas', 'shahnoor', 'abdulrafay']
+// let student = ['kaif', 'raif', 'owais', 'anas', 'shahnoor', 'abdulrafay']
 // if (student[0] === "anas") {
 //     student.splice(0, 1)
 // }
@@ -427,13 +427,137 @@ let student = ['kaif', 'raif', 'owais', 'anas', 'shahnoor', 'abdulrafay']
 //     student.splice(3, 1)
 // }
 
+// let student = ['kaif', 'raif', 'owais', 'anas', 'shahnoor', 'abdulrafay']
+// let i = 0;
+// while (i < 10) {
+//     if (student[i] === "anas") {
+//         student.splice(i, 1)
+//     }
+//     console.log('hello', i)
+//     i++;
+// }
+// console.log(student)
 
-let i = 0;
-while (i < 10) {
-    if (student[i] === "anas") {
-        student.splice(i, 1)
+
+// ================do-while-loop================
+// let j = 11;
+// do {
+//     console.log("hi")
+// } while (j < 10);
+
+
+// =============for-loop====================
+
+// for (let k = 0; k < 100; k++) {
+//     console.log(`number `, k)
+// }
+
+
+// let array = []
+// for (let k = 0; k < 100; k++) {
+//     array.push(`number ${k}`)
+// }
+// console.log(array)
+
+
+let mywork = [];
+
+for (let k = 1; k <= 10; k++) {
+    let ans = k % 2;
+    let lessonObj = {
+        name: `lesson ${k}`,
+        status: ans === 0 ? false : true,
     }
-    console.log('hello', i)
-    i++;
+    // if (k % 2 === 0) {
+    //     lessonObj.status = false;  
+    // }
+
+
+    mywork.push(lessonObj)
 }
-console.log(student)
+// console.log(mywork)
+
+// let arrOfArrays = [];
+// for (let i = 0; i < 3; i++) {
+//     arrOfArrays.push([]);
+//     for (let j = 0; j < 7; j++) {
+//         arrOfArrays[i].push(j);
+//     }
+// }
+// console.log(arrOfArrays)
+
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//     names[i] = "hello " + names[i];
+// }
+// console.log(names);
+
+
+// let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//     if (names[i].startsWith("M")) {
+//         delete names[i];
+//         continue;
+//     }
+//     names[i] = "hello " + names[i];
+// }
+// console.log(names);
+
+// let array = [
+//     [1, 2, 3, 4, 5, 6, 7, 8],
+//     [9, 10, 11, 12, 13, 14, 15, 16],
+//     [9, 10, 11, 12, 13, 14, 15, 16],
+//     [9, 10, 11, 12, 13, 14, 15, 16],
+//     [9, 10, 11, 12, 13, 14, 15, 16],
+//     [9, 10, 11, 12, 13, 14, 15, 16],
+//     [9, 10, 11, 12, 13, 14, 15, 16],
+//     [9, 10, 11, 12, 13, 14, 15, 16]
+// ]
+// console.table(array);
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+//     if (i === 4) {
+//         break;
+//     }
+
+// }
+
+// for (let i = 1; i < 11; i++) {
+//     console.log(i);
+//     if (i === 4) {
+//         continue;
+//     }
+//     console.log('hi i am zubair')
+
+// }
+
+let groups = [
+    ["zahid", "shahmeer", "Ali"],
+    ["zubair", "zeeshan", "Mohsin"],
+    ["hamza", "kaif", "hamid"],
+];
+
+for (let i = 0; i < groups.length; i++) {
+
+    let matches = 0;
+    for (let j = 0; j < groups[i].length; j++) {
+        if (groups[i][j].startsWith("M")) {
+            matches++;
+        } else {
+            continue;
+        }
+        if (matches === 2) {
+            console.log("Found a group with two names starting with M")
+            console.log(groups[i]);
+            break;
+        }
+    }
+
+}
