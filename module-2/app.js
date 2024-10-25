@@ -544,20 +544,81 @@ let groups = [
     ["hamza", "kaif", "hamid"],
 ];
 
-for (let i = 0; i < groups.length; i++) {
+// for (let i = 0; i < groups.length; i++) {
 
-    let matches = 0;
-    for (let j = 0; j < groups[i].length; j++) {
-        if (groups[i][j].startsWith("M")) {
-            matches++;
-        } else {
-            continue;
-        }
-        if (matches === 2) {
-            console.log("Found a group with two names starting with M")
-            console.log(groups[i]);
-            break;
-        }
-    }
+//     let matches = 0;
+//     for (let j = 0; j < groups[i].length; j++) {
+//         if (groups[i][j].startsWith("M")) {
+//             matches++;
+//         } else {
+//             continue;
+//         }
+//         if (matches === 2) {
+//             console.log("Found a group with two names starting with M")
+//             console.log(groups[i]);
+//             break;
+//         }
+//     }
 
+// }
+
+// let step = 3;
+// for (let i = 0; i < 1000; i += step) {
+//     if (i > 10) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// let a = 15;
+// let b = 10;
+// console.log(a + b)
+
+// let c = 10;
+// let d = 20;
+// console.log(c + d)
+
+// function sayHello() {
+//     let input = prompt("Enter your name");
+//     console.log("Hello, " + input)
+
+// }
+
+
+// for (let index = 0; index < 3; index++) {
+//     sayHello();
+// }
+
+// function addTwoNumbers() {
+//     let number1 = +prompt("Enter a number")
+//     let number2 = +prompt("Enter a second number")
+//     console.log("the addition of two numbers is ", number1 + number2)
+// }
+
+// addTwoNumbers()
+// let varContainingFunction = function () {
+//     let varInFunction = "I'm in a function.";
+//     console.log("hi there!", varInFunction);
+// };
+// varContainingFunction();
+let a = 5;
+
+function addTwoNumbers(num1 = 4, num2 = 6, operator) {
+    let result = num1 + num2;
+    console.log(result)
+    return result;
+
+}
+let num1 = +prompt("enter first number")
+let num2 = +prompt("enter second number")
+
+// console.log(number1)
+
+// addTwoNumbers(argument1, argument2, '-')
+// console.log(addTwoNumbers(num1, num2))
+let result2 = addTwoNumbers(num1, num2);
+console.log(result2);
+
+if (result2 === 20) {
+    alert("20 is found");
 }
