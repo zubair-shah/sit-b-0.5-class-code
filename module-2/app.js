@@ -601,7 +601,7 @@ let groups = [
 //     console.log("hi there!", varInFunction);
 // };
 // varContainingFunction();
-let a = 5;
+// let a = 5;
 
 function addTwoNumbers(num1 = 4, num2 = 6, operator) {
     let result = num1 + num2;
@@ -609,16 +609,58 @@ function addTwoNumbers(num1 = 4, num2 = 6, operator) {
     return result;
 
 }
-let num1 = +prompt("enter first number")
-let num2 = +prompt("enter second number")
+// let num1 = +prompt("enter first number")
+// let num2 = +prompt("enter second number")
 
 // console.log(number1)
 
 // addTwoNumbers(argument1, argument2, '-')
 // console.log(addTwoNumbers(num1, num2))
-let result2 = addTwoNumbers(num1, num2);
-console.log(result2);
+// let result2 = addTwoNumbers(num1, num2);
+// console.log(result2);
 
-if (result2 === 20) {
-    alert("20 is found");
+// if (result2 === 20) {
+//     alert("20 is found");
+// }
+
+// function returnHello() {
+//     return "hello";
+// }
+
+// console.log(returnHello())
+
+// const result = () => "hello";
+
+// console.log(result());
+
+
+// const sayHello = (data = "zubair") => {
+
+//     return `hello ${data}`
+// };
+
+// let inputFromUser = prompt("Enter your name");
+// console.log(inputFromUser)
+// // if (!inputFromUser) {
+// //     inputFromUser = undefined;
+// // }
+// console.log(sayHello(inputFromUser));
+
+// let numbers = [1, 2, 3];
+// let numbers2 = [...numbers, 4, 5];
+// console.log('Number', numbers2)
+
+function sumAllNumbers(x, y, ...z) {
+    let c = "hello"
+
+    if (true) {
+        let d = "owais"
+        console.log(d)
+        console.log(c)
+    }
+    console.log(d)
 }
+
+let a = 'zubair';
+
+sumAllNumbers(5, 5, 6, 7, 8)
