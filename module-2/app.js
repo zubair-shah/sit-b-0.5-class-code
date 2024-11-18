@@ -658,9 +658,163 @@ function sumAllNumbers(x, y, ...z) {
         console.log(d)
         console.log(c)
     }
-    console.log(d)
+    // console.log(d)
 }
 
 let a = 'zubair';
 
-sumAllNumbers(5, 5, 6, 7, 8)
+// sumAllNumbers(5, 5, 6, 7, 8)
+
+// (function () {
+//     console.log("IIFE!");
+// })()
+
+
+// function recursiveFunction(nr) {
+//     if (nr === 0) {
+//         return 1
+//     } else {
+//         return nr * recursiveFunction(nr - 1)
+//     }
+// }
+
+// console.log(recursiveFunction(3));
+
+
+
+// -----------chapter-8-builtin-javascript---------
+
+// let x = 8;
+// console.log(isNaN(x))
+
+
+// let currentDate = new Date();
+// console.log(currentDate)
+// // let currentDate1 = new Date("Sat Jun 05 2021 11:40:12");
+// currentDate.setFullYear(2009)
+// console.log(currentDate)
+// console.log("Day of week:", currentDate.getDay())
+// console.log("Day of month:", currentDate.getDate());
+// console.log("Month:", currentDate.getMonth());
+// console.log("Year:", currentDate.getFullYear());
+// console.log("Seconds:", currentDate.getSeconds());
+// console.log("Milliseconds:", currentDate.getMilliseconds());
+// console.log("Time:", currentDate.getTime());
+// console.log("Time:", currentDate.getHours());
+// console.log("Time:", currentDate.getMinutes());
+// console.log("unix:", Date.now());
+// console.log('toDateString:', currentDate.toDateString())
+// console.log('toTimeString:', currentDate.toTimeString())
+
+// let time = 2024
+// function sayHello() {
+//     console.log('hello')
+
+// }
+// function changeNumber() {
+//     console.log('changeNumber')
+//     time = 2025;
+// }
+
+// if (time === 2025) {
+//     alert("happy new year")
+// } else {
+//     setInterval(sayHello, 1000)
+// }
+// setTimeout(changeNumber, 3000)
+// ======================array-methods=================
+
+
+let array = ["Shahnoor", 'anas', 'kaif', 'abdulrafay', 'owais'
+]
+function filterName(element, index) {
+    if (element.startsWith('a')) {
+        return element
+    }
+
+}
+
+let filteredArray = array.filter(filterName)
+console.log(filteredArray)
+
+let arr2 = ["grapefruit", 4, "hello", 5.6, true];
+arr2.copyWithin(0, 3, 4);
+
+
+function IcreaseOneNumber(arrayItem) {
+    return arrayItem + 1
+}
+let arr3 = [1, 2, 3, 4];
+let answer = arr3.map(item => item * 5)
+console.log(arr3);
+console.log(answer);
+
+let arrayNew = [10, 20, 30]
+
+[50, 100, 150]
+
+let bb = ["so", "bye", "bye", "bye", "bye", "love"];
+
+console.log(bb.indexOf('bye', 3))
+console.log(bb.lastIndexOf('bye'))
+
+// ======================string-methods==================================
+// let letters = ["a", "b", "c"];
+// let x = letters.join();
+// console.log(x);
+
+// let letters = ["a", "b", "c"];
+// let x = letters.join('-');
+// console.log(x);
+
+// let searchStr = 'hello javascript'
+// let notFound = searchStr.search("javascript");
+// let notFound = searchStr.indexOf("javascript");
+// console.log(notFound);
+
+
+let str = "Create a substring";
+let substr1 = str.slice(5);
+let substr2 = str.slice(0, 3);
+console.log("1:", substr1);
+console.log("2:", substr2);
+
+
+let hi = "Hi buddy";
+let new_hi = hi.replace("buddy", "Pascal");
+console.log(new_hi);
+
+let s3 = "hello hello";
+let new_s3 = s3.replaceAll("hello", "oh");
+console.log(new_s3);
+
+
+
+
+let stringToConvert = prompt("Enter a string to convert")
+// Hi I Am Zubair And I Am 23 Years Old
+
+function makeCapitalized(str) {
+    let lowerCaseStr = str.toLowerCase();
+    console.log(lowerCaseStr);
+    let CapitalizedWordsArray = [];
+    let splitArray = lowerCaseStr.split(' ')
+    console.log(splitArray);
+    splitArray.forEach((item) => {
+
+        let upperCaseLetter = item.slice(0, 1).toUpperCase()
+        let remainLetters = item.slice(1)
+        let capitalizedWords = upperCaseLetter.concat(remainLetters)
+        CapitalizedWordsArray.push(capitalizedWords)
+        // console.log(capitalizedWords);
+        // console.log(upperCaseLetter);
+        // console.log(remainLetters)
+        // console.log(item);
+    })
+
+    // console.log(CapitalizedWordsArray.join(' '))
+    return CapitalizedWordsArray.join(' ')
+
+}
+let solution = makeCapitalized(stringToConvert)
+console.log(solution)
