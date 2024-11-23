@@ -725,38 +725,38 @@ let a = 'zubair';
 // ======================array-methods=================
 
 
-let array = ["Shahnoor", 'anas', 'kaif', 'abdulrafay', 'owais'
-]
-function filterName(element, index) {
-    if (element.startsWith('a')) {
-        return element
-    }
+// let array = ["Shahnoor", 'anas', 'kaif', 'abdulrafay', 'owais'
+// ]
+// function filterName(element, index) {
+//     if (element.startsWith('a')) {
+//         return element
+//     }
 
-}
+// }
 
-let filteredArray = array.filter(filterName)
-console.log(filteredArray)
+// let filteredArray = array.filter(filterName)
+// console.log(filteredArray)
 
-let arr2 = ["grapefruit", 4, "hello", 5.6, true];
-arr2.copyWithin(0, 3, 4);
+// let arr2 = ["grapefruit", 4, "hello", 5.6, true];
+// arr2.copyWithin(0, 3, 4);
 
 
-function IcreaseOneNumber(arrayItem) {
-    return arrayItem + 1
-}
-let arr3 = [1, 2, 3, 4];
-let answer = arr3.map(item => item * 5)
-console.log(arr3);
-console.log(answer);
+// function IcreaseOneNumber(arrayItem) {
+//     return arrayItem + 1
+// }
+// let arr3 = [1, 2, 3, 4];
+// let answer = arr3.map(item => item * 5)
+// console.log(arr3);
+// console.log(answer);
 
-let arrayNew = [10, 20, 30]
+// let arrayNew = [10, 20, 30]
 
-[50, 100, 150]
+// [50, 100, 150]
 
-let bb = ["so", "bye", "bye", "bye", "bye", "love"];
+// let bb = ["so", "bye", "bye", "bye", "bye", "love"];
 
-console.log(bb.indexOf('bye', 3))
-console.log(bb.lastIndexOf('bye'))
+// console.log(bb.indexOf('bye', 3))
+// console.log(bb.lastIndexOf('bye'))
 
 // ======================string-methods==================================
 // let letters = ["a", "b", "c"];
@@ -773,48 +773,123 @@ console.log(bb.lastIndexOf('bye'))
 // console.log(notFound);
 
 
-let str = "Create a substring";
-let substr1 = str.slice(5);
-let substr2 = str.slice(0, 3);
-console.log("1:", substr1);
-console.log("2:", substr2);
+// let str = "Create a substring";
+// let substr1 = str.slice(5);
+// let substr2 = str.slice(0, 3);
+// console.log("1:", substr1);
+// console.log("2:", substr2);
 
 
-let hi = "Hi buddy";
-let new_hi = hi.replace("buddy", "Pascal");
-console.log(new_hi);
+// let hi = "Hi buddy";
+// let new_hi = hi.replace("buddy", "Pascal");
+// console.log(new_hi);
 
-let s3 = "hello hello";
-let new_s3 = s3.replaceAll("hello", "oh");
-console.log(new_s3);
-
-
+// let s3 = "hello hello";
+// let new_s3 = s3.replaceAll("hello", "oh");
+// console.log(new_s3);
 
 
-let stringToConvert = prompt("Enter a string to convert")
+
+
+// let stringToConvert = prompt("Enter a string to convert")
 // Hi I Am Zubair And I Am 23 Years Old
 
-function makeCapitalized(str) {
-    let lowerCaseStr = str.toLowerCase();
-    console.log(lowerCaseStr);
-    let CapitalizedWordsArray = [];
-    let splitArray = lowerCaseStr.split(' ')
-    console.log(splitArray);
-    splitArray.forEach((item) => {
+// function makeCapitalized(str) {
+//     let lowerCaseStr = str.toLowerCase();
+//     console.log(lowerCaseStr);
+//     let CapitalizedWordsArray = [];
+//     let splitArray = lowerCaseStr.split(' ')
+//     console.log(splitArray);
+//     splitArray.forEach((item) => {
 
-        let upperCaseLetter = item.slice(0, 1).toUpperCase()
-        let remainLetters = item.slice(1)
-        let capitalizedWords = upperCaseLetter.concat(remainLetters)
-        CapitalizedWordsArray.push(capitalizedWords)
-        // console.log(capitalizedWords);
-        // console.log(upperCaseLetter);
-        // console.log(remainLetters)
-        // console.log(item);
-    })
+//         let upperCaseLetter = item.slice(0, 1).toUpperCase()
+//         let remainLetters = item.slice(1)
+//         let capitalizedWords = upperCaseLetter.concat(remainLetters)
+//         CapitalizedWordsArray.push(capitalizedWords)
+//         // console.log(capitalizedWords);
+//         // console.log(upperCaseLetter);
+//         // console.log(remainLetters)
+//         // console.log(item);
+//     })
 
-    // console.log(CapitalizedWordsArray.join(' '))
-    return CapitalizedWordsArray.join(' ')
+//     // console.log(CapitalizedWordsArray.join(' '))
+//     return CapitalizedWordsArray.join(' ')
 
+// }
+// let solution = makeCapitalized(stringToConvert)
+// console.log(solution)
+
+
+
+// const students = [
+//     {
+//         name: "John Doe",
+//         semester: 3,
+//         father_name: "Doe",
+//         isFeePaid: true,
+//         courses: ["Mathematics", "Physics", "Computer Science"]
+//     },
+//     {
+//         name: "Jane Smith",
+//         father_name: "Smith",
+//         semester: 2,
+//         isFeePaid: true,
+//         courses: ["Biology", "Chemistry", "English"]
+//     },
+//     {
+//         name: "Emily Johnson",
+//         father_name: "Johnson",
+//         semester: 4,
+//         isFeePaid: false,
+//         courses: ["Economics", "Statistics", "Marketing"]
+//     },
+//     {
+//         name: "zubair Johnson",
+//         father_name: "Johnson",
+//         semester: 4,
+//         isFeePaid: false,
+//         courses: ["Economics", "Statistics", "Marketing"]
+//     }
+// ];
+// students.forEach((item, index) => {
+//     console.log('item', item)
+//     document.querySelector('table').innerHTML += `
+//        <tr>
+//         <td>1</td>
+//         <td>${item.name}</td>
+//         <td>Shamim</td>
+//         <td>7</td>
+//         <td>true</td>
+//         <td>Maths,English,urdu</td>
+//     </tr>`
+// })
+
+
+let x = 6.78;
+let y = 5.34;
+console.log("X:", x, "becomes", Math.round(x));
+console.log("Y:", y, "becomes", Math.round(y));
+console.log("X:", x, "becomes", Math.ceil(x));
+console.log("Y:", y, "becomes", Math.ceil(y));
+console.log("X:", x, "becomes", Math.floor(x));
+console.log("Y:", y, "becomes", Math.floor(y));
+
+
+function generateRandomNumber(min, max) {
+    for (let i = 0; i < 100; i++) {
+        let random = Math.floor(Math.random() * (max - min) + min);
+        console.log(random)
+    }
 }
-let solution = makeCapitalized(stringToConvert)
-console.log(solution)
+
+generateRandomNumber(10, 30)
+
+
+
+// ==============DOm===================
+
+// let element = document.querySelector('h1')
+// let element = document.querySelector('#abc')
+// let element = document.querySelector('.xyz')
+let element = document.querySelector('.xyz').classList.add("zubair")
+console.log(element)
