@@ -893,3 +893,9 @@ generateRandomNumber(10, 30)
 // let element = document.querySelector('.xyz')
 let element = document.querySelector('.xyz').classList.add("zubair")
 console.log(element)
+
+
+function reveal(element) {
+    element.value = Number(element.value) + 1;
+    console.log(element.value)
+}
