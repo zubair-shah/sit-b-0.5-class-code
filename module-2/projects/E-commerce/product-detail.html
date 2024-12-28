@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I am product Details Page</h1>
+
+    <script>
+async function getSingleProduct(id) {
+    console.log('inside function')
+    try {
+        let response = await fetch(`https://dummyjson.com/products/${id}`)
+        console.log(' response:', response)
+        let data = response.json();
+        return data;
+    } catch (err) {
+        console.log(err)
+    }
+
+}
+        window.onload = function(){
+            let productId = localStorage.getItem('product_id')
+            let data = getSingleProduct(productId)
+            data.then((productDetails) => {
+              console.log('productDetails',productDetails)
+              localStorage.removeItem('product_id')
+            }).error((err) => {
+                console.log(err)
+            })
+            console.log('hello',productId)
+            
+        }
+    </script>
+</body>
+</html>

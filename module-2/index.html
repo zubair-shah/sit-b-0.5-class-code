@@ -4,6 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 1</title>
+    <style>
+ /* div {
+ height: 30px;
+ width: 30px;
+ background-color: white;
+ } 
+  div {
+ height: 100px;
+ width: 100px;
+ background-color: yellow;
+ }
+ .circle {
+ border-radius: 50%;
+ }
+ */
+
+ body{
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    padding: .8rem 1rem;
+}
+
+.navbar .heading{
+    font-size: 30px;
+    font-weight: 500;
+}
+.navbar .links{
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 12rem;
+}
+#product_container {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 30px;            
+    justify-content: center;
+    padding: 20px;           
+}
+.product {
+    width: 260px;     
+    background-color: #f9f9f9;  
+    border-radius: 10px;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;      
+    text-align: center;     
+}
+
+.product_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;    
+}
+
+.product_Section img {
+    width: 100%;    
+    height: auto;      
+    object-fit: cover;      
+    border-bottom: 2px solid #ddd; 
+}
+
+.product_content {
+    padding: 10px;          
+}
+.product_content h4 {
+    font-size: 18px;         
+    font-weight: bold;     
+    color: #333;           
+    margin: 10px 0;        
+}
+
+.product_content h5 {
+    font-size: 16px;        
+    color: #555;            
+    margin-bottom: 10px;     
+}
+.product-heading{
+    text-align: center;
+    padding-top: 1.5rem;
+    color:rgb(53, 52, 52);
+} 
+ </style>
 </head>
 <body>
     <h1>Learning javascript</h1>
@@ -23,6 +110,14 @@
     alert("Bismillah")
     console.log("Bismillah")
  </script>    -->
+ <!-- <div id="red"></div>
+ <div id="orange"></div>
+ <div id="yellow"></div>
+ <div id="green"></div>
+ <div id="blue"></div>
+ <div id="indigo"></div>
+ <div id="violet"></div> -->
+ <!-- <button onclick="rainbowify()">Make me a rainbow</button>
 
  <table border="2" cellspacing="10" cellpadding="5" bgcolor="#efefef">
     <tr>
@@ -33,16 +128,18 @@
         <th>Fee</th>
         <th>Subjects</th>
     </tr>
-    <!-- <tr>
-        <td>1</td>
-        <td>Zubair</td>
-        <td>Shamim</td>
-        <td>7</td>
-        <td>true</td>
-        <td>Maths,English,urdu</td>
-    </tr> -->
  </table>
  <button id="btn" onclick="reveal(this)" value="10">Click</button>
+
+ <p id="magic">I might disappear and appear.</p>
+ <button id="magic-btn">Magic!</button>
+<div id="shape" class="square" ></div> -->
+
+<div id="product_container">
+    
+</div>
+
+ <button onclick="changeAttr()">Change attributes...</button>
  <script src="./app.js"></script>
 
 </body>

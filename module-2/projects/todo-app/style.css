@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    background-image: url(images/B-how-to-do-employment-screening-Thumbnail-082517.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.main {
+
+    display: table;
+    margin: 0 auto;
+
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+
+
+}
+
+.child input {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.child button {
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.child button:hover,
+#delet:hover,
+#edit:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#delet {
+    background-color: rgb(236, 67, 89);
+    color: white;
+    border: none;
+    margin-left: 40px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#edit {
+    background-color: rgb(79, 255, 138);
+    padding: 5px;
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+/* 
+@media screen and  (min-width: 576px) { .main{width: 100%;} }
+@media screen and  (min-width: 768px) { .main{width: 100%;} }
+@media screen and  (min-width: 992px) { .main{width: 100%;} }
+@media screen and  (min-width: 1200px) { .main{width: 100%;} } */
+#list {
+    text-decoration-color: ghostwhite;
+}
+
+#list li {
+    font-size: 20px;
+    color: white;
+}
+
+.lis {
+    text-decoration-color: ghostwhite;
+}

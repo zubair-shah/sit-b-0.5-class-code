@@ -865,24 +865,24 @@ let a = 'zubair';
 // })
 
 
-let x = 6.78;
-let y = 5.34;
-console.log("X:", x, "becomes", Math.round(x));
-console.log("Y:", y, "becomes", Math.round(y));
-console.log("X:", x, "becomes", Math.ceil(x));
-console.log("Y:", y, "becomes", Math.ceil(y));
-console.log("X:", x, "becomes", Math.floor(x));
-console.log("Y:", y, "becomes", Math.floor(y));
+// let x = 6.78;
+// let y = 5.34;
+// console.log("X:", x, "becomes", Math.round(x));
+// console.log("Y:", y, "becomes", Math.round(y));
+// console.log("X:", x, "becomes", Math.ceil(x));
+// console.log("Y:", y, "becomes", Math.ceil(y));
+// console.log("X:", x, "becomes", Math.floor(x));
+// console.log("Y:", y, "becomes", Math.floor(y));
 
 
-function generateRandomNumber(min, max) {
-    for (let i = 0; i < 100; i++) {
-        let random = Math.floor(Math.random() * (max - min) + min);
-        console.log(random)
-    }
-}
+// function generateRandomNumber(min, max) {
+//     for (let i = 0; i < 100; i++) {
+//         let random = Math.floor(Math.random() * (max - min) + min);
+//         console.log(random)
+//     }
+// }
 
-generateRandomNumber(10, 30)
+// generateRandomNumber(10, 30)
 
 
 
@@ -891,11 +891,201 @@ generateRandomNumber(10, 30)
 // let element = document.querySelector('h1')
 // let element = document.querySelector('#abc')
 // let element = document.querySelector('.xyz')
-let element = document.querySelector('.xyz').classList.add("zubair")
-console.log(element)
+// let element = document.querySelector('.xyz').classList.add("zubair")
+// console.log(element)
 
 
-function reveal(element) {
-    element.value = Number(element.value) + 1;
-    console.log(element.value)
+// function reveal(element) {
+//     element.value = Number(element.value) + 1;
+//     console.log(element.value)
+// }
+
+// function toggleDisplay() {
+//     let p = document.getElementById("magic");
+//     p.style.color = "yellow"
+//     // if (p.style.display === "none") {
+//     //     p.style.display = "block";
+//     // } else {
+//     //     p.style.display = "none";
+//     // }
+// }
+
+// function rainbowify() {
+//     let divs = document.getElementsByTagName("div");
+//     for (let i = 0; i < divs.length; i++) {
+//         divs[i].style.backgroundColor = divs[i].id;
+//     }
+// }
+
+// function changeAttr() {
+//     let el = document.getElementById("shape");
+//     el.setAttribute("style", "background-color:red;border:1px")
+//     el.setAttribute("id", "new");
+//     el.setAttribute("class", "circle");
+
+// }
+
+// let magicBtn = document.getElementById('magic-btn');
+// magicBtn.addEventListener("click", changeAttr)
+
+
+// let h1 = document.createElement("h1");
+// h1.innerText = "zubair shaikh"
+// document.body.appendChild(h1);
+// console.log(h1);
+
+
+
+
+// ==================Es6===========
+
+// 1) let &  const
+
+// let c = 1;
+// const b = 2;
+
+// console.log("global", c);
+// console.log("global", b);
+// function test() {
+//     let d = 2;
+//     const e = 3;
+//     console.log("inside function", d);
+//     console.log("inside function", e);
+
+//     if (true) {
+//         let g = 12;
+//         const f = 13;
+//         var i = 0;
+//         console.log("inside block", g);
+//         console.log("inside block", f);
+//         console.log("inside block", i);
+//     }
+//     console.log("outside block but inside function", i);
+//     // console.log("outside block but inside function", g);
+//     // console.log("outside block but inside function", f);
+// }
+// test()
+// console.log("outside function", d);
+// console.log("outside function", e);
+// console.log("outside function", i);
+
+
+// 2) Template Literals
+
+
+// let templateLiteralVairable = `i am string and i can be a multiline
+
+//    this is second line and i can add variables inside template literals
+
+//    ${c}`
+// console.log(templateLiteralVairable)
+
+// 3)  arrow functions
+
+// let arrowFunction = (params) => {
+//     return params
+// }
+// console.log(arrowFunction(3))
+
+// 4) Destructing
+
+// let myFavProgrammingLang = ["javascript", "python", "java", "html"];
+
+// let top1 = myFavProgrammingLang[0];
+// let top2 = myFavProgrammingLang[1];
+// let top3 = myFavProgrammingLang[3];
+
+// let [top1, top2, , top3] = myFavProgrammingLang;
+// console.log(
+//     `my fav progm lang is ${top1} and 2nd fav is ${top2} and third one is ${top3} `
+// );
+
+// let myInfo = {
+//     name: "zubair",
+//     age: 18,
+//     class1: 20,
+//     rollNumber: 3434
+// }
+
+// let { class1, rollNumber } = myInfo;
+// console.log(class1, rollNumber);
+
+// -----------------promise--------------------------
+
+// const pobj1 = new Promise((resolve, reject) => {
+//     fetch('https://jsonplaceholder.tpicode.com/users')
+//         .then((response) => response.json()) // Parse the response as JSON
+//         .then((data) => {
+//             setTimeout(() => {
+//                 console.log("studentNameData", data);
+//                 if (data.length > 0) {
+//                     resolve(data);
+//                 } else {
+//                     reject("can't get student data");
+//                 }
+//             }, 2000);
+//         })
+//         .catch((error) => {
+//             reject("Error fetching student data: " + error);
+//         });
+// });
+
+// pobj1
+//     .then((data) => {
+//         console.log("Resolved data:", data);
+//     })
+//     .catch((error) => {
+//         console.log("Rejected error:", error);
+//     });
+
+
+
+// =========================async-await====================
+
+async function getUsersOfGithub() {
+    console.log('inside function')
+    try {
+        let response = await fetch('https://dummyjson.com/products')
+        console.log(' response:', response)
+        let data = response.json();
+        return data;
+    } catch (err) {
+        console.log(err)
+    }
+
+}
+
+let productData = getUsersOfGithub()
+var productHtml = document.getElementById("product_container");
+productData.then((products) => {
+    console.log(products)
+    let data = products.products;
+    data.map((pro) => {
+        productHtml.innerHTML += `
+            <div class="product" onclick="productId(${pro.id})">
+                <div class="product_layout">
+                    <div class="product_Section">
+                        <img src="${pro.thumbnail}" class="img">
+                        <div class="product_content">
+                            <h4>${pro.title}</h4>
+                            <h5>Price: $${pro.price}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+    });
+
+})
+    .catch((err) => {
+        console.log(err)
+    })
+
+
+function productId(productId) {
+    console.log(productId)
+    localStorage.setItem('product_id', productId)
+    // let url = `https://dummyjson.com/products/${productId}`;
+    setTimeout(() => {
+        window.location.href = "./product-detail.html";
+    }, 1000)
 }
