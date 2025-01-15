@@ -1,11 +1,36 @@
-function Pet({ animal, city, breed }) {
+// const Pet = (props) => {
+
+//     const { name, animal, breed, images, location, id } = props;
+
+//     let hero = "http://pets-images.dev-apis.com/pets/none.jpg";
+//     if (images.length) {
+//         hero = images[0];
+//     }
+
+//     return (
+//         <div className="search">
+//             <a href={`/details/${id}`} className="pet">
+//                 <div className="image-container">
+//                     <img src={hero} alt={name} />
+//                 </div>
+//                 <div className="info">
+//                     <h1>{name}</h1>
+//                     <h2>{`${animal} — ${breed} — ${location}`}</h2>
+//                 </div>
+//             </a>
+//         </div>
+//     );
+// };
+
+// export default Pet;
+
+
+function Pet(props) {
+    console.log(props.name, props.animal)
     return (
         <div>
-            <h1>Pet: {animal}</h1>
-            <h2>city: {city}</h2>
-            <h3>breed: {breed}</h3>
+            <h1>I am a component {props.name}</h1>
         </div>
-
     )
 }
 

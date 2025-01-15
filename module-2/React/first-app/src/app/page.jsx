@@ -13,7 +13,7 @@ export default function Home() {
         />
         <h1>We are learning React</h1>
         <div className="zubair">
-          <h1>I am zubair</h1>
+          <h1>I am zubair shaikh</h1>
         </div>
         <div className={styles.ctas}>
           <a
