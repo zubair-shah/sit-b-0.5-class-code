@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import useBreedList from "../hooks/useBreedList";
-import Pet from "./Pet";
+import Result from "./Result";
 const ANIMALS = ["Select Animal", "bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
@@ -12,14 +12,21 @@ const SearchParams = () => {
 
     useEffect(() => {
         requestPets()
-    }, [animal, location])
+    }, [])
     // const locationChange = (event) => {
     //     // location += event.target.value
     //     // console.log(event.target.value)
     //     setLocation(event.target.value)
     // }
-
-
+    let apiURL = null;
+    let mode = import.meta.env.MODE;
+    console.log('import.meta.env.API_URL_DEV', import.meta.env)
+    if (mode === "development") {
+        apiURL = import.meta.env.VITE_API_URL_DEV;
+    } else {
+        apiURL = import.meta.env.VITE_API_URL_PROD
+    }
+    console.log(apiURL)
     async function requestPets() {
         const res = await fetch(
             `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
@@ -36,7 +43,10 @@ const SearchParams = () => {
 
     return (
         <div className="search-params">
-            <form>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                requestPets()
+            }}>
                 <label htmlFor="location">
                     Location
                     <input id="location" onChange={(e) => setLocation(e.target.value)} value={location} placeholder="Location" />
@@ -79,22 +89,9 @@ const SearchParams = () => {
                             ))}
                     </select>
                 </label>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
-            {pets.map((pet) => {
-
-                return (
-                    <Pet
-                        animal={pet.animal}
-                        key={pet.id}
-                        name={pet.name}
-                        breed={pet.breed}
-                        images={pet.images}
-                        location={`${pet.city}, ${pet.state}`}
-                        id={pet.id} />
-                )
-            })}
-
+            <Result pets={pets} />
         </div>
     );
 };

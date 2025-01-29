@@ -8,7 +8,7 @@ const Pet = (props) => {
     }
 
     return (
-        <div className="search">
+        <>
             <a href={`/details/${id}`} className="pet">
                 <div className="image-container">
                     <img src={hero} alt={name} />
@@ -18,7 +18,7 @@ const Pet = (props) => {
                     <h2>{`${animal} — ${breed} — ${location}`}</h2>
                 </div>
             </a>
-        </div>
+        </>
     );
 };
 
